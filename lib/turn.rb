@@ -6,8 +6,8 @@ def display_board(board="")
 
 end
 
-def input_to_index(input="-1")
-  input=(input.to_i) -= 1;
+def input_to_index(input)
+  input=(input.to_i) - 1;
 end
 
 def valid_move?(board, index)
