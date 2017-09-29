@@ -30,6 +30,6 @@ def turn(board)
       input=(input.to_i);
       input_to_index(input);
       valid_move?(board, index);
-      
+
   end
 end
