@@ -6,6 +6,11 @@ def display_board(board="")
 
 end
 
+def input_to_index(input="-1")
+  input=(input.to_i) - 1;
+
+end
+
 def valid_move?(board, index)
   if board[index] == "" || board[index] == " " || board[index] == nil && index.between?(0, 8)
     return true
@@ -15,12 +20,6 @@ def valid_move?(board, index)
   end
 end
 
-def input_to_index(input="-1")
-  input=(input.to_i) - 1;
-
-end
-
 def move(board, index, value="X")
   return board[index]=value
 end
-
