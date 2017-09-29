@@ -26,7 +26,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input=gets.strip
-    until input.between(1,9)
+    until input.between?(1,9)
       puts "Please enter 1-9"
   end
 end
