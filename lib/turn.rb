@@ -28,6 +28,6 @@ def turn(board)
       puts "Please enter 1-9:"
       input=gets.strip;
       input=(input.to_i);
+      input_to_index(input);
   end
-  input_to_index(input);
 end
