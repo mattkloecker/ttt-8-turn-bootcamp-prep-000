@@ -30,5 +30,4 @@ def turn(board)
       input=(input.to_i);
   end
   input_to_index(input);
-  valid_move?(board, index)
 end
