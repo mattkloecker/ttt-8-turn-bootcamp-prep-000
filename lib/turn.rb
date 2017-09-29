@@ -8,7 +8,6 @@ end
 
 def input_to_index(input="-1")
   input=(input.to_i) - 1;
-
 end
 
 def valid_move?(board, index)
@@ -30,4 +29,5 @@ def turn(board)
       input=gets.strip;
       input=(input.to_i);
   end
+  input_to_index(input)
 end
