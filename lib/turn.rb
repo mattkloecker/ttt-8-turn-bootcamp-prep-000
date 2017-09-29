@@ -24,8 +24,9 @@ def move(board, index, value="X")
 end
 
 def turn(board)
+  
     until input.between?(1,9)
       puts "Please enter 1-9:"
-      input.gets.strip
+      input=gets.strip
   end
 end
