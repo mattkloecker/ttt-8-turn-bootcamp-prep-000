@@ -25,9 +25,11 @@ end
 
 def turn(board)
       puts "Please enter 1-9:"
-      input=gets.strip
+      input=gets.strip;
+      input=(input.to_i);
     until input.between?(1, 9)
       puts "Please enter 1-9:"
-      input=gets.strip
+      input=gets.strip;
+      input=(input.to_i);
   end
 end
