@@ -27,6 +27,8 @@ def turn(board)
       until input.between?(1, 9)
         puts "Please enter 1-9:"
         input=gets.strip;
+        input= - 1;
+        input=(input.to_i);
         input_to_index(input);
     end
     valid_move?(board, input)
