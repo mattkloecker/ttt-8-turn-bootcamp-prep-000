@@ -24,10 +24,10 @@ end
 
 def turn(board)
       input=0
-    until valid_move?(true)
-      puts "Please enter 1-9:"
-      input=gets.strip;
-      input=(input.to_i);
-      input_to_index(input);
+      until input.between?(1, 9)
+        puts "Please enter 1-9:"
+        input=gets.strip;
+        input=(input.to_i);
+        input_to_index(input);
     end
 end
