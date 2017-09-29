@@ -30,4 +30,9 @@ def turn(board)
       input=(input.to_i);
   end
   input_to_index(input);
+  if board[index] == "" || board[index] == " " && index.between?(0, 8)
+    return true
+  elsif board[index] == "X" || board[index] == "O"
+    return false
+  end
 end
