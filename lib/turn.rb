@@ -29,7 +29,5 @@ def turn(board)
       input=gets.strip;
       input=(input.to_i);
       input_to_index(input);
-      valid_move?(board, index);
-
-  end
+    end
 end
