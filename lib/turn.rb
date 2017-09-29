@@ -23,11 +23,12 @@ def move(board, index, value="X")
 end
 
 def turn(board)
-      input=0
-      until input.between?(1, 9)
         puts "Please enter 1-9:"
-        input=gets.strip;
-        index=input_to_index(input);
+        input.gets.strip
+        index=input_to_index(input)
+      if valid_move?(board,index)=true
+        move(board, index, "X")
+      else
+        turn(board)  
       end
-    valid_move?(board, index)
-end
+  end
