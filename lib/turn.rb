@@ -30,6 +30,5 @@ def turn(board)
         move(board, index);
       else
         turn(board);
-        display(board)
       end
 end
